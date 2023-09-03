@@ -1,0 +1,38 @@
+<div style="display: flex; height:650px; justify-content:center; align-items: center;">
+    <div class="mycalc">
+      <h4>{{title}}</h4>
+      <input #box (keyup.enter)="calcvalue(box.value)" [(ngModel)]="toshow" type="text" >
+      <div class="all-btn">
+        <div class="all-btn-numbers">
+          <button (click)="wirtetoinput('1')">1</button>
+          <button (click)="wirtetoinput('2')">2</button>
+          <button (click)="wirtetoinput('3')">3</button>
+          <button (click)="wirtetoinput('4')">4</button>
+          <button (click)="wirtetoinput('5')">5</button>
+          <button (click)="wirtetoinput('6')">6</button>
+          <button (click)="wirtetoinput('7')">7</button>
+          <button (click)="wirtetoinput('8')">8</button>
+          <button (click)="wirtetoinput('9')">9</button>
+          <button (click)="wirtetoinput('.')">.</button>
+          <button (click)="wirtetoinput('0')">0</button>
+          <button (click)="back()">back</button>
+          
+        </div>
+        <div class="all-btn-signs">
+          <button (click)="wirtetoinput('+')">+</button>
+          <button (click)="wirtetoinput('-')">-</button>
+          <button (click)="wirtetoinput('*')">*</button>
+          <button (click)="wirtetoinput('/')">/</button>
+          
+        </div>
+      </div>
+        <div class="btn-clear-equals">
+          <button id="clear" (click)="clear()">CE</button>
+          <button id="clear" (click)="clear()">C</button>
+          <button id="module" (click)="wirtetoinput('%')">%</button>
+          <button id="equal" (click)="equal()">=</button>
+        </div>
+    
+      
+    </div>
+  </div>

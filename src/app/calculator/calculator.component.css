@@ -1,0 +1,101 @@
+.mycalc{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+.all-btn{
+    display: flex;
+}
+.all-btn-numbers{
+    display: flex;
+    width: 210px;
+    flex-wrap: wrap;
+}
+.all-btn-signs{
+    display: flex;
+    flex-direction: column;
+}
+.all-btn-numbers button{
+    background-color: aliceblue;
+    border: none;
+    margin: 10px;
+    color: rgb(7, 10, 17);
+    font-size: 20px;
+    border-radius: 45px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all-btn-signs button{
+    background-color: rgb(157, 236, 210);
+    border: none;
+    margin: 10px;
+    color: rgb(77, 73, 73);
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all-btn-signs button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 5px rosybrown;
+}
+.all-btn-numbers button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 5px rosybrown;
+}
+.btn-extra{
+    display: flex;
+}
+.btn-extra button{
+    background-color: rgb(157, 236, 210);
+}
+.btn-extra button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 5px rgb(252, 249, 249);
+}
+.btn-clear-equals{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.btn-clear-equals button{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    color: rgb(77, 73, 73);
+    background-color:rgb(231, 192, 192);
+    border: none;
+}
+
+#equal:hover,#module:hover,#clear:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+input{
+    width: 90%;
+    margin: 10px 5px;
+    font-size: 20px;
+    height: 40px;
+    font-weight: 700;
+    text-align: right;
+
+}
+input:focus{
+    outline: none;
+    border: 1px solid rgb(213, 191, 235);
+}
